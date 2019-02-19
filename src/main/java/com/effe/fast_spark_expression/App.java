@@ -35,7 +35,7 @@ public class App {
 				.and(not(col("Fat").cast("int").$greater(0)))).show(false);
 
 		// filter dataset with SparkExpressionFilter
-				sparkExpressionFilter.filter(dataset, "Type=C&(Calories<100)&(Manufacturer=Kelloggs|(Manufacturer=Nabisco))&(!(Fat>0))").show(false);
+		sparkExpressionFilter.filter(dataset, "Type=C&(Calories<100)&(Manufacturer=Kelloggs|(Manufacturer=Nabisco))&(!(Fat>0))").show(false);
 		// ENJOY! :)
 		
 		sparkSession.stop();
