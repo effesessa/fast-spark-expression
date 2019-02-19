@@ -35,8 +35,8 @@ public class SparkExpressionStringCode extends SimpleJavaFileObject {
 	}
 	
 	public byte[] getBytes() {
-        return outputStream.toByteArray();
-    }
+		return outputStream.toByteArray();
+	}
 	
 	public String getName() {
 		return name;
