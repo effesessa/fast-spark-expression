@@ -35,4 +35,8 @@ dataset.filter(col("Type").equalTo("C").and(col("Calories").cast("int").$less(10
   .and(col("Manufacturer").equalTo("Kelloggs").or(col("Manufacturer").equalTo("Nabisco")))
   .and(not(col("Fat").cast("int").$greater(0)))).show(false);
 ```
+## Support
+Actually, support:
+isNotNull(), isNull(), equalTo(), notEqual(), $less(), $greater(), or(), and() and not()
+####
 Enjoy! :)
